@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { CartProvider } from '@/contexts/CartContext';
@@ -12,8 +12,12 @@ export const metadata: Metadata = {
   description: 'Modern eCommerce store powered by CJ Dropshipping API',
   keywords: 'dropshipping, ecommerce, online store, products',
   authors: [{ name: 'CJ Store' }],
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
