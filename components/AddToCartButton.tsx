@@ -70,7 +70,7 @@ export default function AddToCartButton({ product }: AddToCartButtonProps) {
             Select Option
           </label>
           <div className="grid grid-cols-1 gap-2">
-            {product.variants.map((variant) => (
+            {product.variants && product.variants.map((variant) => (
               <label 
                 key={variant.vid}
                 className={`flex items-center justify-between p-3 border rounded-lg cursor-pointer transition-colors ${
